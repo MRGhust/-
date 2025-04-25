@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Vazirmatn', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+  
+  /* For RTL support */
+  [dir="rtl"] {
+    text-align: right;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#E94560] hover:bg-[#d13a53] text-white font-bold py-2 px-4 rounded transition-colors duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#0F3460] hover:bg-[#0a264a] text-white font-bold py-2 px-4 rounded transition-colors duration-300;
+  }
+}
