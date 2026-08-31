@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col" dir="rtl">
+    <div className="site" dir="rtl">
       <Navbar />
       <Hero />
       <ProductSection />
